@@ -10,35 +10,54 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header class="head">
-      <nav>
-        <ul class="list">
-          <li>
-            <a class="link logo head-nav-link" href="">SIMPLY CHOCOLATE</a>
+    <header class="head container">
+      <nav class="head-nav">
+        <ul class="list container">
+          <li class="head-nav-item container">
+            <a class="link logo" href="./index.html">SIMPLY CHOCOLATE </a>
+            <img
+              class="logo-img"
+              src="./images/chocolate.svg"
+              alt="chocolate logo"
+              width="24"
+            />
           </li>
-          <li>
+          <li class="head-nav-item">
             <a class="link head-nav-link" href="">Home</a>
           </li>
-          <li>
+          <li class="head-nav-item">
             <a class="link head-nav-link" href="">How it’s made?</a>
           </li>
-          <li>
+          <li class="head-nav-item">
             <a class="link head-nav-link" href="">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
-      <ul class="list">
+      <ul class="list container">
         <li>
-          <a class="link head-list-link" href="">Instagram</a>
+          <a class="link head-list-link" href="">
+            <img src="./images/instagram.svg" alt="instagram logo" width="24" />
+          </a>
         </li>
         <li>
-          <a class="link head-list-link" href="">Facebook</a>
+          <a class="link head-list-link" href="">
+            <img src="./images/facebook.svg" alt="facebook logo" width="24" />
+          </a>
         </li>
         <li>
-          <a class="link head-list-link" href="">Twetter</a>
+          <a class="link head-list-link" href="">
+            <img src="./images/twitter.svg" alt="twitter logo" width="24" />
+          </a>
         </li>
       </ul>
     </header>
@@ -48,11 +67,18 @@
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button class="hero-button" type="button">Buy now</button>
-        <ul class="list">
-          <li><a class="link" href="">How it’s made</a></li>
-          <li><a class="link hero-link" href="">scroll down</a></li>
-        </ul>
+        <div class="container">
+          <button class="hero-button" type="button">Buy now</button>
+          <ul class="list container">
+            <li><a class="link hero-link" href="">How it’s made</a></li>
+            <p>scroll down</p>
+            <li>
+              <a class="link hero-scroll-link" href="#foot-id">
+                <img src="./images/scroll.svg" alt="scroll link" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="advantages-title">h2 to hide</h2>
@@ -265,7 +291,7 @@
         <button type="button">Leave a review</button>
       </section>
     </main>
-    <footer>
+    <footer id="foot-id">
       <p>Chocolate a delicious cure for a bad day</p>
       <p>Social networks</p>
       <ul class="list">
