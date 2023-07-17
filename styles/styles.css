@@ -49,6 +49,9 @@ button {
 
 /*-------------- LOGO ------------------------*/
 .logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11; /* 111.111% */
@@ -58,6 +61,7 @@ button {
   font-style: italic;
 }
 .logo-img {
+  margin-left: 4px;
 }
 
 /*-------------- COMMON STYLES ------------------------*/
@@ -67,6 +71,10 @@ button {
   padding-right: 16px;
   margin: 0 auto;
   outline: 2px solid tomato;
+}
+.box-flex {
+  display: flex;
+  align-items: center;
 }
 .section-title {
   margin: 0;
@@ -89,27 +97,43 @@ button {
 /*-------------- HEADER ------------------------*/
 .head {
   padding-top: 24px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 
   outline: 1px solid blue;
 }
 .head-nav {
 }
 .hed-nav-list {
+  display: flex;
 }
 .head-nav-item {
+  display: flex;
+  align-items: center;
 }
-.hed-nav-link {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px; /* 114.286% */
-  letter-spacing: -0.28px;
+.head-nav-item:not(:last-child) {
+  margin-right: 24px;
+}
+.head-nav-item:first-child {
+  margin-right: 413px;
 }
 .head-nav-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -0.02em;
 }
 .head-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 .head-list-item {
+}
+.head-list-item:not(:last-child) {
+  margin-right: 14px;
 }
 .head-list-link {
 }
@@ -128,6 +152,7 @@ button {
 }
 .hero-title {
   margin-bottom: 32px;
+  max-width: 484px;
 
   color: var(--color-white-2);
   font-size: 28px;
@@ -137,6 +162,7 @@ button {
 }
 .hero-button {
   padding: 14px 40px;
+  margin-right: 14px;
 
   background-color: var(--color-orange);
   color: var(--color-white-2);
@@ -146,11 +172,18 @@ button {
 
   border-radius: 100px;
 }
+.hero-list {
+}
 .hero-link {
+  padding: 14px 40px;
+
   color: var(--color-white-2);
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+
+  border-radius: 100px;
+  border: 1px solid var(--color-white-2);
 }
 .hero-scroll-link {
   color: var(--color-white-2);
@@ -159,6 +192,12 @@ button {
   line-height: 1.29; /* 128.571% */
   letter-spacing: -0.03em;
 }
+.hero-item {
+}
+.hero-item:last-child {
+  margin-left: auto;
+}
+
 /*-------------- ADVANTAGES ------------------------*/
 .advantages {
   padding-top: 50px;
